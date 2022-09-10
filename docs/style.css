@@ -273,6 +273,11 @@ body
     }
 }
 @media screen and (max-width: 375px){
+    .event-name{
+        font-size: 2rem;
+        letter-spacing: 10px;
+        justify-content: space-around;
+    }
     .candle::before
     {
         width: 3px;
@@ -284,23 +289,66 @@ body
     }
     .flame
     {
-        bottom: calc(55% + 35px);
+        bottom: calc(55% + 40px);
         width: 20px;
-        height: 25px;
+        height: 30px;
     }
 }
 @media screen and (max-width: 360px){
     .event-name-box{
         padding-left: .5rem;
     }
+    .candle{
+        width: 20px;
+    }
 	.event-name{
         font-size: 1rem;
+        letter-spacing: 10px;
         justify-content: space-around;
+    }
+    .candle::before
+    {
+        width: 3px;
+        height: 20px;
+        transform:  rotateZ(15deg);
+        left: 50%;
+        top: -18px;
+        border-radius: 4px;
     }
     .flame
     {
-        bottom: calc(55% + 45px);
+        bottom: calc(55% + 42px);
+        width: 15px;
+        height: 30px;
+    }
+}
+@media screen and (max-width: 260px){
+    .event-name-box{
+        padding-left: .1rem;
+    }
+	.event-name{
+        font-size: 1rem;
+        letter-spacing: 10px;
+        justify-content: space-around;
+    }
+    .candle
+    {
         width: 20px;
+        bottom: 5vh;
+    }
+    .candle::before
+    {
+        width: 3px;
+        height: 20px;
+        transform:  rotateZ(10deg);
+        left: 50%;
+        top: -18px;
+        border-radius: 4px;
+    }
+    .flame
+    {
+        bottom: calc(50% + 32px);
+        width: 15px;
         height: 25px;
     }
 }
